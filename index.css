@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Dancing_Script';
+    src: url('/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+    /* Add additional font formats if needed */
+  }
+
+* {
+
+}
+
+body {
+    background-color: rgb(148, 116, 101);
+  }
+
+  [type="text"] {
+    border: 1px solid color-mix(blend rgb(255 0 0) 50%, rgb(0 255 0) 50%); 
+  }
+
+
+  ul{
+    display: block;
+  }
+
+  ol{
+    display: inline-block;
+  }
+
+  ol li{
+    text-decoration: underline;
+  }
+
+  h2 > h3{
+    text-decoration: solid;
+  }
+
+  ul ~ li{
+    text-decoration: solid;
+  }
+
+  #meetingRecording{
+    text-decoration: solid;
+  }
+
+  section + h2 {
+    font-family: 'Dancing_Script', sans-serif;
+    font-size: 1rem;
+  }
+
+  h3:has(+ ol) {
+    color: blue;
+  }
+
+  parentRule {
+    /* parent rule style properties */
+    & childRule {
+      text-decoration: solid;
+    }
+  }
+  
+  h1 {
+    font-family: 'Dancing_Script', sans-serif;
+    font-size: 50px;
+    margin: auto;
+  }
+
+  h2 {
+    font-family: 'Dancing_Script', sans-serif;
+    height: 25px;
+    width: 25px;
+    max-width: 50vh;
+    min-width: 20px;
+    white-space: nowrap;
+    font-size: 1.2em;
+  }
+
+  .flex-container {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(84deg 30% 70%);
+    border: 10px solid hsl(84deg 30% 70%);
+  }
+
+  li.flex-container {
+      text-decoration: solid; /* Adjust spacing between items */
+  }
+
+  .flex-container li{
+    margin-right: 5pc; /* Adjust spacing between items */
+  }
+
+  .flex-container a:hover{
+    background: rgb(80, 80, 80);
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Optional: Add styles to list items */
+  .grid-container li {
+    background-color: gray;
+    border: 1px solid color(srgb 0 0 0); /* Add border for visualization */
+    padding: 10px; /* Add padding to each item */
+    text-align: center; /* Center text horizontally */
+}
+
+  video{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 5px;
+    background-color: white;
+    position: static;
+  }
+
+  audio{
+    margin: 20px 30px 40px 50px;
+    padding: 20px 30px 40px 50px;
+    position: relative;
+    right: 5pt;
+  }
+
+  details{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 5px;
+    background-color: gray;
+  }
+  summary:hover, button:active{
+    color:green;
+  }
